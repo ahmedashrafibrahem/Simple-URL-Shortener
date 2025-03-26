@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>URL Shortener</h1>
+            <p>Enter your long URL and get a shortened version instantly</p>
+        </header>
+
+        <main>
+            <div class="url-form">
+                <input type="url" id="urlInput" placeholder="Enter your URL here" required>
+                <button id="shortenBtn">Shorten URL</button>
+            </div>
+
+            <div class="result" id="result">
+                <div class="shortened-url">
+                    <input type="text" id="shortUrl" readonly>
+                    <button id="copyBtn">Copy</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Made with ❤️ using Node.js and Express</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
